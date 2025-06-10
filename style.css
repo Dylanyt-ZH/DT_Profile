@@ -1,0 +1,34 @@
+.image-container {
+    
+    overflow: hidden;
+    /* 裁剪超出部分 */
+    background-color: blueviolet;
+    border-radius: 50%;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* transform: translateX(-12%) translateY(5%); */
+}
+
+.whole-page {
+    background: url(images/background.jpg) no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center; /* 关键：始终居中显示 */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.full-name {
+    padding-top: 15rch;
+    color:aliceblue;
+}
+
+.short-info {
+    color: aliceblue;
+}

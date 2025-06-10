@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dylan Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scale=no">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css" />
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="images/memoji.png">
+
+
+</head>
+
+<body class="whole-page">
+    
+    
+
+        <div id="responsiveBox" class="resxponsive-box" ></div>
+        <div class="container text-center" style="margin-top:5ch">
+            <div class="row" >
+                <div class="col-lg-2" style="border: 1px black solid; align-items: center;">
+                    <div class="image-container">
+                        <img src="images/memoji.png" alt="memoji" class="avatar-img">
+                    </div>
+                </div>
+                <div class="col-lg-4 ">
+                    <h1 id="full-name" class="full-name">Dylan Tong</h1>
+                </div>
+            </div>
+            <div class = "row">
+                <div class="col-md-3 text-left-align">
+                <span class="short-info">Software Developer | Data Analyst</span>
+</div>
+            </div>
+
+        </div>
+
+
+    <script>
+        // 获取元素引用
+        const responsiveBox = document.getElementById('responsiveBox');
+        const resizeIndicator = document.getElementById('resizeIndicator');
+        const full_name = document.getElementById('full-name')
+
+        // 定义断点宽度（以像素为单位）
+        const breakpoint = 768; // 相当于 Bootstrap 的 lg 断点
+
+        // 更新盒子高度的函数
+        function updateBoxHeight() {
+            const windowWidth = window.innerWidth;
+            const isLargeScreen = windowWidth >= breakpoint;
+
+            // 根据屏幕尺寸设置不同的高度百分比
+            const heightPercentage = isLargeScreen ? 30 : 10;
+            responsiveBox.style.height = `${heightPercentage}vh`;
+
+
+        }
+        // 初始调用一次以设置正确的高度
+        updateBoxHeight();
+        // 监听窗口大小变化事件
+        window.addEventListener('resize', updateBoxHeight);
+        function updateNamePadding() {
+            const windowWidth = window.innerWidth;
+            const isLargeScreen = windowWidth >= breakpoint;
+            
+            const PaddingNum = isLargeScreen ? 15 : 5;
+            full_name.style.paddingTop = `${PaddingNum}rch`;
+
+        }
+         updateNamePadding();
+        // 监听窗口大小变化事件
+        window.addEventListener('resize', updateNamePadding);
+    </script>
+</body>
+
+</html>
