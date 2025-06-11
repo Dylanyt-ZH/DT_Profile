@@ -14,28 +14,78 @@
 </head>
 
 <body class="whole-page">
-    
-    
 
-        <div id="responsiveBox" class="resxponsive-box" ></div>
-        <div class="container text-center" style="margin-top:5ch">
-            <div class="row" >
-                <div class="col-lg-2" style="border: 1px black solid; align-items: center;">
-                    <div class="image-container">
-                        <img src="images/memoji.png" alt="memoji" class="avatar-img">
+
+
+    <div id="responsiveBox" class="resxponsive-box"></div>
+
+    <div class='container show-border'>
+        <div class=row>
+            <div class="col-lg-6 show-border">
+                <div class="row">
+                    <div class="col-md-5 show-border" style="border-color: aqua;">
+                        <div class="image-container">
+                            <img src="images/memoji.png" class="avatar-img">
+                        </div>
+                    </div>
+                    <div class="col-md show-border">
+
+                        <h1 class="full-name ">Dylan Tong</h1>
+
+                        <div class="short-info">
+                            <p> Data Scientist | FullStack Developer</p>
+                            <p>Python, SQL, R, Excel, PowerBI, AWS</p>
+                        </div>
+
                     </div>
                 </div>
-                <div class="col-lg-4 ">
-                    <h1 id="full-name" class="full-name">Dylan Tong</h1>
-                </div>
             </div>
-            <div class = "row">
-                <div class="col-md-3 text-left-align">
-                <span class="short-info">Software Developer | Data Analyst</span>
-</div>
+            <!-- Link area -->
+            <div class="col-lg-6 text-center">
+                <div class="row ">
+                    <div class="col-md ">
+                        <a  href="#">
+                            <div class="link-container show-border link-area">
+
+                                Linkedin
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md">
+                        <div class="link-container show-border">
+                            <a class="single-link" href="#">
+                                Youtube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md">
+                        <div class="link-container show-border">
+                            <a class="single-link" href="#">
+                                Linkedin
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="link-container show-border">
+                            <a class="single-link" href="#">
+                                Youtube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
+    </div>
+
+
+
+
 
 
     <script>
@@ -65,12 +115,12 @@
         function updateNamePadding() {
             const windowWidth = window.innerWidth;
             const isLargeScreen = windowWidth >= breakpoint;
-            
+
             const PaddingNum = isLargeScreen ? 15 : 5;
             full_name.style.paddingTop = `${PaddingNum}rch`;
 
         }
-         updateNamePadding();
+        updateNamePadding();
         // 监听窗口大小变化事件
         window.addEventListener('resize', updateNamePadding);
     </script>
