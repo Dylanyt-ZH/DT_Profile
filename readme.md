@@ -1,6 +1,6 @@
 ## Dylan Profile Page
 
-My first completed frontend project! Here are all social links I usually use in my daliy life. The page used bootstarp frame to achieve reasonable layout. Cute buttom animation when you place mouse on it. 
+My first completed frontend project! Here are all social links I usually use in my daliy life. The page used bootstarp frame to achieve reasonable layout. Cute button animation when you place mouse on it. 
 
 #### Tech Stack
 
